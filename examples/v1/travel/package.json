@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently -k -n ui,agent -c blue,red \"PORT=3000 npm run dev:ui\" \"PORT=8000 npm run dev:agent\"",
+    "dev": "concurrently -k -n ui,agent -c blue,red \"npx cross-env PORT=3000 pnpm run dev:ui\" \"npx cross-env PORT=8000 pnpm run dev:agent\"",
     "dev:ui": "next dev",
     "dev:agent": "cd agent && uv run main.py",
     "build": "next build",

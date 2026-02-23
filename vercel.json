@@ -1,8 +1,0 @@
-{
-  "projects": [
-    {
-      "src": "examples/v1/travel/package.json",
-      "use": "@vercel/next"
-    }
-  ]
-}
